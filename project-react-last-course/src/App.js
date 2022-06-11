@@ -13,23 +13,41 @@ import PrivateRoute from './core/guards/PrivateRoute';
 function App() {
   
   return (
-    <>
-      <Header />
-      <main className="page-main">
-        <Switch>
-          <PrivateRoute path="/account">
-            <Account />
-          </PrivateRoute>
-          <Route path="/auth">
-            <Auth />
-          </Route>
-          <Route path="/">
-            <Features />
-          </Route>
-        </Switch>
-      </main>
-      <Footer />
-    </>
+//     <>
+//       <Header />
+//       <main className="page-main">
+//         <Switch>
+//           <PrivateRoute path="/account">
+//             <Account />
+//           </PrivateRoute>
+//           <Route path="/auth">
+//             <Auth />
+//           </Route>
+//           <Route path="/">
+//             <Features />
+//           </Route>
+//         </Switch>
+//       </main>
+//       <Footer />
+//     </>
+
+// <>
+<Header />
+<main className="page-main">
+  <Switch>
+    <PrivateRoute path="/account">
+      <Account />
+    </PrivateRoute>
+    <Route path="/auth">
+      <Auth />
+    </Route>
+    <Route path="/">
+      <Features />
+    </Route>
+  </Switch>
+</main>
+<Footer />
+</>
   );
 }
 
